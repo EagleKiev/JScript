@@ -58,9 +58,9 @@ function sum(array) {
 g.push(a+a1+a2);
 g.push(125);
 g.push(75);
--
+
 //console.dir({ form });
--
+
 console.log(typeof(a));
 
 console.log(b);
@@ -71,32 +71,26 @@ console.log(typeof(d));
 console.log(typeof(e));
 console.log(typeof(f));
 console.log(typeof(g));
--
+
 console.log(g)
--
+
 console.log('h = ', h, typeof(h)  );
--
+
 console.log('a == ', a,'type == ', typeof(a));
 console.log('b == ', typeof(b));
--
+
 console.log("Арбуз" <  "Яблоко")//сравнение
 // → true
-
 console.log(typeof 4.5)
 // → number
--
 console.log(typeof "x")
 // → string
-
 console.log(- (10 - 2))
 // → -8
-
 console.log(3 > 2)
 // → true
-
 console.log(3 < 2)
 // → false
-
 console.log(k)
 console.log("Хочется" != "Колется")
 // → true
