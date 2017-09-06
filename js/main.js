@@ -1,14 +1,14 @@
 'use strict';
 
-let a = 50;//число
-let a1 = 150;//число
-let a2 =350;//число
+let a = 50;						//число
+let a1 = 150;						//число
+let a2 =350;						//число
 let b = 'Между первой и второй\nсимвол будет небольшой';//строка
-let c = null;//число
-let d = true;//Булевские величины
-let e;//непонятно что
-let f = {};//число
-let g = [];//число
+let c = null;						//число
+let d = true;						//Булевские величины
+let e;							//непонятно что
+let f = {};						//число
+let g = [];						//число
 let h = {
     name: "Vasya", who: 9, adadadad: null
 };
@@ -17,40 +17,29 @@ let form = {
     fam: 'Ivanov'
     };
 
-let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-let k1 = 100 + 4 * 11;//математика
-let l = 0/0;//«not a number» (не число)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
-//let k = 2.998e8;//степень (Это 2.998 × 10^8 = 299800000.)
+let k = 2.998e8;					//степень (Это 2.998 × 10^8 = 299800000.)
+let k1 = 100 + 4 * 11;					//математика
+let l = 0/0;						//«not a number» (не число)
 
-function range(start, end, step) {
-    if (step == null) step = 1;
-    var array = [];
+function range(start, end, step) { 			//для подсчета диапазоно от 1 до 10
+    if (step == null) step = 1;				//описывается функция range
+    var array = [];					//описывается функция range
 
-    if (step > 0) {
-        for (var i = start; i <= end; i += step)
-            array.push(i);
+    if (step > 0) {					//описывается функция range
+        for (var i = start; i <= end; i += step)	//описывается функция range
+            array.push(i);				//описывается функция range
     } else {
-        for (var i = start; i >= end; i += step)
-            array.push(i);
+        for (var i = start; i >= end; i += step)	//описывается функция range
+            array.push(i);				//описывается функция range
     }
     return array;
 }
 
-function sum(array) {
-    var total = 0;
-    for (var i = 0; i < array.length; i++)
-        total += array[i];
-    return total;
+function sum(array) {					//описывается функция sum
+    var total = 0;					//описывается функция sum
+    for (var i = 0; i < array.length; i++)		//описывается функция sum
+        total += array[i];				//описывается функция sum
+    return total;					//описывается функция sum
 }
 
 
@@ -79,7 +68,7 @@ console.log('h = ', h, typeof(h)  );
 console.log('a == ', a,'type == ', typeof(a));
 console.log('b == ', typeof(b));
 
-console.log("Арбуз" <  "Яблоко")//сравнение
+console.log("Арбуз" <  "Яблоко")			//сравнение
 // → true
 console.log(typeof 4.5)
 // → number
@@ -103,15 +92,15 @@ console.log(typeof(l))
 
 console.log(NaN == NaN)
 // → false
-console.log(true && false)//Оператор && — логическое «и».
+console.log(true && false)			//Оператор && — логическое «и».
 // → false
-console.log(true && true)//Оператор && — логическое «и».
+console.log(true && true)			//Оператор && — логическое «и».
 // → true
 console.log(1 + 1 == 2 && 10 * 10 > 50)
 // → true
-console.log(false || true)//логическое «или». Выдаёт true, если одна из величин true
+console.log(false || true)			//логическое «или». Выдаёт true, если одна из величин true
 // → true
-console.log(false || false)//логическое «или». Выдаёт true, если одна из величин true
+console.log(false || false)			//логическое «или». Выдаёт true, если одна из величин true
 // → false
 console.log(8 * null)
 // → 0
@@ -125,35 +114,9 @@ console.log(false == 0)
 // → true
 console.log(sum(range(1, 10)));
 // → 55
-for (let line = "#"; line.length < 68; line += "#")
-    console.log(line);
+for (let line = "#"; line.length < 68; line += "#")	// рисует елочку
+    console.log(line);					// рисует елочку
 
 
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
-
-//console.log(k)
 
 //console.log(k)
