@@ -1,18 +1,18 @@
-// Вы­во­дит со­об­ще­ние в спе­ци­аль­ной об­лас­ти для от­ла­доч­ных со­об­ще­ний внут­ри до­ку­мен­та.
-// Ес­ли до­ку­мент не со­дер­жит та­кой об­лас­ти, она соз­да­ет­ся.
+// Выводит сообщение в специальной области для отладочных сообщений внутри документа.
+// Если документ не содержит такой области, она создается.
 function debug(msg) {
-// Оты­скать об­ласть для от­ла­доч­ных со­об­ще­ний в до­ку­мен­те, по­иск по HTML-ат­ри­бу­ту id
+// Отыскать область для отладочных сообщений в документе, поиск по HTML-атрибуту id
     var log = document.getElementById("debuglog");
-// Ес­ли эле­мент с ат­ри­бу­том id="debuglog" от­сут­ст­ву­ет, соз­дать его.
+// Если элемент с атрибутом id="debuglog" отсутствует, создать его.
     if (!log) {
-        log = document.createElement("div");  // Соз­дать эле­мент <div>
-        log.id = "debuglog";                  // Ус­та­но­вить ат­ри­бут id
-        log.innerHTML = "<h1>Debug Log</h1>"; // На­чаль­ное со­дер­жи­мое
-        document.body.appendChild(log);       // До­ба­вить в ко­нец до­ку­мен­та
+        log = document.createElement("div");  // Создать элемент <div>
+        log.id = "debuglog";                  // Установить атрибут id
+        log.innerHTML = "<h1>Debug Log</h1>"; // Начальное содержимое
+        document.body.appendChild(log);       // Добавить в конец документа
     }
-// Те­перь обер­нуть со­об­ще­ние в те­ги <pre> и до­ба­вить в эле­мент log
-    var pre = document.createElement("pre");  // Соз­дать тег <pre>
-    var text = document.createTextNode(msg);  // Обер­нуть msg в тек­сто­вый узел
-    pre.appendChild(text);                    // До­ба­вить текст в тег <pre>
-    log.appendChild(pre);                     // До­ба­вить <pre> в эле­мент log
+// Теперь обернуть сообщение в теги <pre> и добавить в элемент log
+    var pre = document.createElement("pre");  // Создать тег <pre>
+    var text = document.createTextNode(msg);  // Обернуть msg в текстовый узел
+    pre.appendChild(text);                    // Добавить текст в тег <pre>
+    log.appendChild(pre);                     // Добавить <pre> в элемент log
 }
