@@ -1,4 +1,4 @@
-//Работа со строками
+/*//Работа со строками
 //Одной из встроенных возможностей JavaScript является способность конкатенировать строки. Если оператор +
 //применяется к числам, они складываются, а если к строкам – они объединяются, при этом вторая строка добавляется
 //в конец первой. Например:
@@ -37,8 +37,40 @@ s.toUpperCase()             // => "HELLO, WORLD"
 
 s = "hello, world";
 s[0]           // => "h"
-s[s.length-1]  // => "d"
+s[s.length-1]  // => "d"*/
 
+console.log("Some string");
+console.log('Some string1');
 
+console.log('Some "Long" string');
+console.log("Some 'Long' string");
 
+console.log("hello Eagleeeeeeeeeeeee".length);
+console.log("hello \Eagleee \eeeee \eeeee");
+console.log("hello \nEagleee \neeeee \neeeee");
+console.log("hello \n\tEagleee \n\t\teeeee \n\t\t\teeeee");
+console.log("hello \\ Eagleee \"eeeee\" eeeee");
 
+var string  = "Privet i chto tipa tam..."
+console.log(string.charAt(0));
+console.log(string.charAt(string.length - 1));
+console.log(string.substring(5));
+console.log(string.substring(10,17));
+console.log(string.slice(-10));
+console.log(string.substr(14,7));
+console.log(string.indexOf("tam"));
+console.log(string.lastIndexOf("tam"));
+console.log(string.replace("chto","CHTO!!!"));
+
+console.log("");
+string = string.replace("chto","CHTO!!!");
+console.log(string);
+
+console.log("");
+console.log(string.split(" "));
+
+console.log("");
+console.log(string.toUpperCase());
+console.log(string.toLocaleLowerCase());
+
+console.log(string[7])
