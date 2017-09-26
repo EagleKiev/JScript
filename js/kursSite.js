@@ -2,21 +2,22 @@
 
 let now = new Date();
 
-function kursDollar(x,y) {
-    console.log("");
-    console.log("Курс Доллара на " + now.toLocaleDateString() + " ---> " + (x / y).toFixed(9));
-    //console.log(Math.round((x / y)*1000000)/1000000);
-    console.log("");
-
-}
-
 function kursEuro(x,y) {
     console.log("");
-    console.log("Курс Евро на " + now.toLocaleDateString() + " ---> "+ (x / y).toFixed(9));
-    //console.log(Math.round((x / y)*1000000)/1000000);
     console.log("");
-
+    console.log("Курс евро на " + now.toLocaleDateString() + " ---> " + (x / y).toFixed(8));
+    // console.log(Math.round((x / y)*1000000000000)/1000000000000);
 }
 
-kursDollar(1,26.5);
+function kursDollar(x,y) {
+    console.log("___________________________________________");
+    console.log("");
+    console.log("Курс $доллара на " + now.toLocaleDateString() + " ---> " + (x / y).toFixed(8));
+    // console.log(Math.round((x / y)*1000000)/1000000);
+    console.log("");
+    console.log("");
+    console.log("");
+}
+
 kursEuro(1,31.4);
+kursDollar(1,26.5);
